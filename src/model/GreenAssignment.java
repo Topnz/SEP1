@@ -26,6 +26,8 @@ public class GreenAssignment extends Assignment
   public GreenAssignment(String title, int pointAmount, String description, Date dueDate)
   {
     super(title, pointAmount, description);
+    this.dueDate = dueDate;
+    this.timesCompleted = 0;
   }
 
   /**

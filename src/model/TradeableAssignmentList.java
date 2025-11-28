@@ -18,9 +18,14 @@ public class TradeableAssignmentList
    * Constructs a TradeableAssignmentList for the given citizen provider.
    *
    * @param citizenProvider the citizen providing the tradeable assignments
+   * @throws IllegalArgumentException if the provided citizenProvider is null
    */
   public TradeableAssignmentList(Citizen citizenProvider)
   {
+    if (citizenProvider == null)
+    {
+      throw new IllegalArgumentException("Citizen can't be null");
+    }
     this.citizenProvider = citizenProvider;
     tradeableAssignments = new ArrayList<>();
   }
