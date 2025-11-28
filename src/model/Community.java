@@ -83,7 +83,7 @@ public class Community
    * Returns a list of milestones that are not yet achievable based on
    * the current shared points, sorted by point amount in ascending order.
    *
-   * @return a sorted ArrayList of unachievable milestones
+   * @return a sorted ArrayList of achievable milestones
    */
   public ArrayList<Milestone> getSortedMilestonesByAchieveability()
   {
