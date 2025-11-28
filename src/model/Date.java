@@ -113,7 +113,7 @@ public class Date
   public int numberOfDaysInMonth()
   {
     if (month < 1 || month > 12) {
-      throw new IllegalArgumentException("Ukendt måned: " + month);
+      throw new IllegalArgumentException("Unknown month: " + month);
     }
 
     switch (month) {
@@ -140,7 +140,7 @@ public class Date
         }
 
       default:
-        throw new IllegalStateException("Ukendt måned: " + month);
+        throw new IllegalStateException("Unknown month: " + month);
     }
   }
 
@@ -167,7 +167,7 @@ public class Date
       case 12: return "December";
 
       default:
-        throw new IllegalArgumentException("Ukendt måned: " + month);
+        throw new IllegalArgumentException("Unknown month: " + month);
     }
   }
 
