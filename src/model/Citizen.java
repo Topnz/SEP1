@@ -87,7 +87,7 @@ public class Citizen extends Person
    * @return a string representing the citizen
    * @see java.lang.Object#toString()
    */
-  public String toString()
+  @Override public String toString()
   {
     return super.getFullName() + " Personlige point: " + personalPoints;
   }

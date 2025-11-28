@@ -29,7 +29,7 @@ public class TradeableAssignment extends Assignment
    * @return a string containing the title, description, and point amount
    * @see java.lang.Object#toString()
    */
-  public String toString()
+  @Override public String toString()
   {
     return "Title: " + super.getTitle() + " Description: " + super.getDescription() + " Points: " + super.getPointAmount();
   }

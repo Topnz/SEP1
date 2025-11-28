@@ -93,7 +93,7 @@ public abstract class Assignment
    * @return the string representation
    * @see java.lang.Object#toString()
    */
-  public abstract String toString();
+  @Override public abstract String toString();
 
   /**
    * Compares this assignment to another object for equality.
@@ -102,5 +102,5 @@ public abstract class Assignment
    * @return true if the other object is equal to this assignment
    * @see java.lang.Object#equals(Object)
    */
-  public abstract boolean equals(Object obj);
+  @Override public abstract boolean equals(Object obj);
 }
