@@ -93,7 +93,9 @@ public class Address
     {
       return false;
     }
+
     Address address = (Address) obj;
+
     return zipcode == address.zipcode && Objects.equals(streetName,
         address.streetName) && Objects.equals(houseNumber, address.houseNumber);
   }
