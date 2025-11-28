@@ -24,18 +24,6 @@ public class Address
    */
   public Address(String streetName, String houseNumber, int zipcode)
   {
-    set(streetName, houseNumber, zipcode);
-  }
-
-  /**
-   * Sets all fields of the address at once.
-   *
-   * @param streetName the name of the street
-   * @param houseNumber the house number
-   * @param zipcode the zipcode
-   */
-  public void set(String streetName, String houseNumber, int zipcode)
-  {
     this.streetName = streetName;
     this.houseNumber = houseNumber;
     this.zipcode = zipcode;
