@@ -6,8 +6,8 @@ import java.util.Objects;
  * Represents a green assignment with completion status, times completed, and a due date.
  * Extends the abstract Assignment class.
  *
- * author SEP Group 1
- * @version 1.0 (28/11-2025)
+ * @author SEP Group 1
+ * @version 1.0 (29/11-2025)
  */
 public class GreenAssignment extends Assignment
 {
@@ -16,18 +16,20 @@ public class GreenAssignment extends Assignment
   private Date dueDate;
 
   /**
-   * Constructs a GreenAssignment with the specified title, point amount, description, and due date.
+   * Constructs a GreenAssignment with the specified title, point amount,
+   * description, due date, and the number of times completed.
    *
    * @param title the title of the assignment
    * @param pointAmount the points associated with the assignment
    * @param description a description of the assignment
    * @param dueDate the due date of the assignment
+   * @param timesCompleted the number of times the assignment has been completed
    */
-  public GreenAssignment(String title, int pointAmount, String description, Date dueDate)
+  public GreenAssignment(String title, int pointAmount, String description, Date dueDate, int timesCompleted)
   {
     super(title, pointAmount, description);
     this.dueDate = dueDate;
-    this.timesCompleted = 0;
+    this.timesCompleted = timesCompleted;
   }
 
   /**
@@ -51,6 +53,16 @@ public class GreenAssignment extends Assignment
   }
 
   /**
+   * Sets the number of times the assignment has been completed.
+   *
+   * @param timesCompleted the new times completed count
+   */
+  public void setTimesCompleted(int timesCompleted)
+  {
+    this.timesCompleted = timesCompleted;
+  }
+
+  /**
    * Returns the due date of this assignment.
    *
    * @return a copy of the due date
@@ -71,8 +83,8 @@ public class GreenAssignment extends Assignment
   }
 
   /**
-   * Returns a string representation of the green assignment, including title, description,
-   * points, due date, and times completed.
+   * Returns a string representation of the green assignment, including title,
+   * description, points, due date, and times completed.
    *
    * @return a string representing the assignment
    * @see java.lang.Object#toString()
@@ -86,7 +98,8 @@ public class GreenAssignment extends Assignment
 
   /**
    * Compares this green assignment to another object for equality.
-   * Two green assignments are equal if their completion status, times completed, and due dates are the same.
+   * Two green assignments are equal if their completion status, times completed,
+   * and due dates are the same.
    *
    * @param obj the object to compare with
    * @return true if the other object is a GreenAssignment with the same properties
