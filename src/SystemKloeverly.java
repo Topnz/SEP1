@@ -31,6 +31,9 @@ public class SystemKloeverly extends Application
     ms.addMilestone(new Milestone("Samarbejde", 550));
     ms.addMilestone(new Milestone("Innovation", 650));
     ms.addMilestone(new Milestone("Miljøtiltag", 750));
+    ms.addMilestone(new Milestone("Samarbejde", 550));
+    ms.addMilestone(new Milestone("Innovation", 650));
+    ms.addMilestone(new Milestone("Miljøtiltag", 750));
 
     ArrayList<Milestone> msSorted = community.getSortedMilestonesByAchieveability();
 
