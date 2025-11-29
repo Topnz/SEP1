@@ -106,4 +106,14 @@ public class TradeableAssignmentList
   {
     return null;
   }
+
+  /**
+   * Returns the list of tradeable assignments.
+   *
+   * @return an {@link ArrayList} containing all TradeableAssignment objects
+   */
+  public ArrayList<TradeableAssignment> getArrayList()
+  {
+    return tradeableAssignments;
+  }
 }
